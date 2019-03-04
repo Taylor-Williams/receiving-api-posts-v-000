@@ -18,10 +18,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    def create
-      @post = Post.create(post_params)
-      render json: @post, status: 201
-    end
+    @post = Post.create(post_params)
+    render json: @post, status: 201
   end
 
   def edit
